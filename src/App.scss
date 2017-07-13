@@ -1,0 +1,67 @@
+.jumbotron{
+    background-color: #f2f2f2;
+    color:#333;
+    border-top: 10px solid #333;
+}
+img{
+    cursor: pointer;
+    text-align: center;
+    vertical-align: center;
+}
+img.windows{
+    // padding-top: 50px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+img.mac{
+    // padding-top: 20px;
+    width: 100px;
+    height: 110px;
+    text-align: center;
+}
+img.linux{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.linux-cir{
+    background: #ccc;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 100%;
+}
+.jumbotron{
+    text-align: center;
+}
+.logos{
+    margin-top: 0px;
+   
+}
+.progress{
+    height: 50px;
+    vertical-align: center;
+    display: inline-block;
+    width:inherit;
+}
+.progress-bar-windows{
+    background-color: #00ADEF;
+}
+.progress-bar-mac{
+   background-color: #B3B3B3; 
+}
+.progress-bar-linux{
+    background-color: #F9E22D;
+}
+
+.vote{
+    font-size: 18px;
+    vertical-align: center;
+    margin-top: 20px;
+}
+.shell{
+    display: block;
+    width:100%;
+    float:left;
+    margin-bottom:50px;
+}
