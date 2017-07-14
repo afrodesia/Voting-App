@@ -7,6 +7,7 @@ img{
     cursor: pointer;
     text-align: center;
     vertical-align: center;
+    display: inline;
 }
 img.windows{
     // padding-top: 50px;
@@ -31,6 +32,18 @@ img.linux{
     display: inline-block;
     border-radius: 100%;
 }
+.mac-cir{
+    background: #ccc;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 100%;
+}
+.win-cir{
+    background: #ccc;
+    padding: 30px;
+    display: inline-block;
+    border-radius: 100%;
+}
 .jumbotron{
     text-align: center;
 }
@@ -40,9 +53,11 @@ img.linux{
 }
 .progress{
     height: 50px;
-    vertical-align: center;
+    vertical-align:-30px;
     display: inline-block;
-    width:inherit;
+    min-width:80%;
+    margin-left: 60px;
+    
 }
 .progress-bar-windows{
     background-color: #00ADEF;
@@ -64,4 +79,5 @@ img.linux{
     width:100%;
     float:left;
     margin-bottom:50px;
+    padding-top: 60px;
 }

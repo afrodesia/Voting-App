@@ -54,6 +54,7 @@ class Results extends Component {
             width: this.votesforWindowsInPercent() + '%'
          }
     }
+
     votesforMacInPercentStyle(){
         
         return {
@@ -63,66 +64,72 @@ class Results extends Component {
         votesforLinuxInPercentStyle(){
             
         return {
-            width: this. votesforlinuxInPercent() + '%'
+            width: this.votesforlinuxInPercent() + '%'
          }
     }
     render(){
         return(
         <div className="container">
+                <div className="row">
 
-            <div className="row">
                 <article className="windows-shell shell">
-                     <img className="windows" 
+                    <span className="win-cir" onClick={this.handleVoteWindows}>
+                    <img className="windows" 
                     src="img/windows.svg"
                     alt="windows"
-                    onClick={this.handleVoteWindows} 
-                 />
-                    <span className="">Window : { this.votesforWindowsInPercent().toFixed(2) + '%'} </span>
-                    <div className="progress progress-striped active">
-                        <div className="progress-bar progress-bar-windows" role="progressbar"  style={ this.votesforWindowsInPercentStyle() }>
-                            <span className="vote"> { this.votesforWindowsInPercent().toFixed(2) + '%'} </span>
-                        </div>
-                    </div>
-
+                     
+                     />
+                    </span>
+                    <span className="push">
+                    <span className="progress progress-striped active">
+                        <span className="progress-bar progress-bar-windows" role="progressbar"  style={ this.votesforWindowsInPercentStyle() }>
+                            <span className="vote"> Windows -{ this.votesforWindowsInPercent().toFixed(2) + '%'} </span>
+                        </span>
+                    </span>
+                    </span>
                 </article>
-              </div>
+                </div>
               
               
-              <div className="row>">
+               <div className="row">
                 <article className="mac-shell shell">
+                <span className="mac-cir" onClick={this.handleVoteMac}>
                     <img className="mac" 
                     src="img/Apple-Apple.svg"
                     alt="Mac" 
-                    onClick={this.handleVoteMac}
+                    
                 />
+                </span>
 
-                    <span className="">Mac : { this.votesforMacInPercent().toFixed(2) + '%'} </span>
-                    <div className="progress progress-striped active">    
-                        <div className="progress-bar progress-bar-mac" role="progressbar" style={ this.votesforMacInPercentStyle() } >
-                            <span className="vote">{ this.votesforMacInPercent().toFixed(2) + '%'} </span>
-                        </div>
-                    </div>
+                    <span className="push"> 
+                    <span className="progress progress-striped active">    
+                        <span className="progress-bar progress-bar-mac" role="progressbar" style={ this.votesforMacInPercentStyle() } >
+                            <span className="vote">Mac - { this.votesforMacInPercent().toFixed(2) + '%'} </span>
+                        </span>
+                    </span>
+                    </span>
+
                 </article>
-            </div>
+                </div>
 
-          
+                <div className="row">
                 <article className="linux-shell shell">
-                    <span className="linux-cir">
+                                            
+                        <span className="linux-cir" onClick={this.handleVoteLinux}>
                         <img className="linux"
                         src="img/linux-tux.svg"
                         alt="Linux"
-                        onClick={this.handleVoteLinux} 
                         />
                     </span>
-
-
-                    <span className="">Linux: { this.votesforlinuxInPercent().toFixed(2) + '%'} </span>
-                    <div className="progress progress-striped active">
-                        <div className="progress-bar progress-bar-linux" role="progressbar"  style={ this.votesforLinuxInPercentStyle() }>
-                        <span className="vote">{ this.votesforlinuxInPercent().toFixed(2) + '%'} </span>
-                        </div>
-                    </div>
+                    <span className="push">
+                    <span className="progress progress-striped active">
+                        <span className="progress-bar progress-bar-linux" role="progressbar"  style={ this.votesforLinuxInPercentStyle() }>
+                        <span className="vote">Linux -{ this.votesforlinuxInPercent().toFixed(2) + '%'} </span>
+                        </span>
+                    </span>
+                    </span>
                 </article>
+                </div>
 
             </div>    
        
